@@ -1,0 +1,98 @@
+*{
+    margin :0px;
+    padding:0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    box-shadow: inset;
+}
+
+#bodyStyle{
+    height: 100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background : linear-gradient(135deg, rgb(11, 1, 118), rgb(4, 144, 4));
+}
+
+h3{
+    color: rgb(25, 232, 25);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/* .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+} */
+
+
+#taskList{
+    color :#0000ff;
+    font-weight: bold;
+    font-size: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 2px 35px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button:hover {
+    background: rgb(129, 206, 14);
+}
+
+.deleteButtonStyle{
+    background-color: #0000ff;
+    color : #ffffff;
+    border: rgb(167, 242, 17);
+    padding: 2px;
+}
+
+
+  .completed-task {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  /* To display Messages in DIV */
+
+  /* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #ffffff; 
+    color: #f44336;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

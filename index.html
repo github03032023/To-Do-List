@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To-Do List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to local css file -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- link to local css font file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body id="bodyStyle">
+    <header>
+        <h3>To-Do List</h3>
+    </header>
+    <main>
+        <div class="container my-4 d-flex flex-column align-items-center">
+            <div id="messageContainer" class="alert" style="display: none;"></div>
+            <div id="btnContainer" class="btn-group my-3" role="group" aria-label="Filter tasks">
+                <button type="button" class="btn btn-outline-primary" id="btnAll">All</button>
+                <button type="button" class="btn btn-outline-primary" id="btnActive">Active</button>
+                <button type="button" class="btn btn-outline-primary" id="btnCompleted">Completed</button>
+            </div>
+
+            <div id="newTaskContainer" class="input-group mb-3 w-85 border border-success">
+                <label for="newTask" class="input-group-text">Add Task</label>
+                <input type="text" class="form-control" id="newTask" name="newTask" placeholder="Add a new task here">
+                <button class="btn btn-primary" id="addBtn">Add</button>
+            </div>
+
+            
+            <div class="container d-flex flex-column align-items-center border border-success">
+                <ul class="list-group w-75" id="taskList">
+                    <!-- Tasks will be appended here -->
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="index.js" async defer></script>
+</body>
+
+</html>
